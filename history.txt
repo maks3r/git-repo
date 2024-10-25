@@ -1,0 +1,50 @@
+notepad plik.txt
+type plik.txt
+notepad plik.txt
+git add plik.txt
+git status
+git config --global
+git config --global mrozycki2@st.swps.edu.pl
+git config --global user.name mrozycki2@st.swps.edu.pl
+git config --global --list
+git config --global user.email mrozycki2@st.swps.edu.pl
+git config --global user.name maks
+git config --global --list
+git config --global user.name pindol
+git config --global --list
+git status
+git commit -m "initial"
+git config --global --list
+git log
+git log --oneline
+git branch -M main
+git status
+git branch dev 
+git status
+git checkout dev
+echo "%username%" >> plik.txt
+type plik.txt
+git status
+git add plik.txt
+git status
+git commit -m "mod in dev"
+git log
+git checkout main 
+git merge dev
+git checkout -b feature1
+echo linia >> plik.txt
+git add plik.txt
+git commit -m "feature1 branch change"
+git checkout main
+echo linia3_feature2 >> plik.txt
+git add plik.xtx
+git add plik.txt
+git commit -m "feature2 branch change"
+git merge feature1
+git checkout main
+git status
+notepad plik.txt
+git add plik.txt
+git commit -m "conflict resolved commit"
+git log --oneline
+doskey /HISTORY > history.txt
